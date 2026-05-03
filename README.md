@@ -6,7 +6,7 @@
 
 ## Recent Project: B-LINK
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9a0ccd48-85ea-4963-821f-65091660d71f" alt="B-LINK Banner" width="100%">
+  <img src="https://github.com/user-attachments/assets/9a0ccd48-85ea-4963-821f-65091660d71f" alt="B-LINK Banner" width="30%">
 </p>
 
 The most recent project I worked on was in Human Center Design and Innovation where the prompt was to create a solution to a disaster that could hit NYC.

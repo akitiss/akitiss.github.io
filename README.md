@@ -6,8 +6,16 @@
 
 ## Recent Project: B-LINK
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/af222054-d23c-44be-a000-3832c7531533" alt="B-LINK Logo" width="20%" />
-  <img src="https://github.com/user-attachments/assets/9a0ccd48-85ea-4963-821f-65091660d71f" alt="B-LINK Banner" width="45%" />
+  <table align="center">
+    <tr>
+      <td valign="middle" align="center">
+        <img src="https://github.com/user-attachments/assets/af222054-d23c-44be-a000-3832c7531533" alt="B-LINK Logo" width="200" />
+      </td>
+      <td valign="middle" align="center">
+        <img src="https://github.com/user-attachments/assets/9a0ccd48-85ea-4963-821f-65091660d71f" alt="B-LINK Banner" width="450" />
+      </td>
+    </tr>
+  </table>
 </p>
 
 The most recent project I worked on was in Human Center Design and Innovation where the prompt was to create a solution to a disaster that could hit NYC.

@@ -20,8 +20,7 @@
 
 The most recent project I worked on was in Human Center Design and Innovation where the prompt was to create a solution to a disaster that could hit NYC. Our solution was to create an organization that would aid NYC residents during a snowstorm, building trust for them to help again in other disaster. 
 
-- [Watch the Project Video](https://youtu.be/2r5Z6SL4N0A)
-- [Visit My Portfolio Website](https://akitiss.github.io/)
+[Watch the Project Video](https://youtu.be/2r5Z6SL4N0A)
 
 ---
 

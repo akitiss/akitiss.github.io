@@ -1,1 +1,17 @@
+.hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.hero-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
 

@@ -49,20 +49,20 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.btn-accent {
+.btn-accent, .btn-brand {
     background-color: var(--button);
     border-color: var(--button);
     color: #fff;
 }
 
-.btn-accent:hover {
+.btn-accent:hover, .btn-brand:hover {
     background-color: var(--button-highlight);
     border-color: var(--button-highlight);
     color: #fff;
 }
 
 .badge-brand {
-    background-color: var(--brand-color);
+    background-color: var(--gray);
     color: #fff;
 }
 

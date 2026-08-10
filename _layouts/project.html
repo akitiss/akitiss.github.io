@@ -2,29 +2,30 @@
 layout: default
 ---
 
-<div class="container py-5 mt-5">
+<div class="container project-page py-5 mt-5">
 
-    <a href="/projects.html" class="d-inline-block mb-4">&larr; Back to Projects</a>
+    <a href="/projects.html" class="btn back-btn btn-sm mb-4">&larr; Back to Projects</a>
 
-    <h1 class="mb-3">{{ page.title }}</h1>
+    <h1 class="project-title mb-1">{{ page.title }}</h1>
+    <div class="title-underline mb-4"></div>
 
     {% if page.problem %}
-    <div class="mb-4">
-        <h5 class="text-uppercase text-muted small mb-1">Problem</h5>
+    <div class="project-block">
+        <span class="project-label">Problem</span>
         <p>{{ page.problem }}</p>
     </div>
     {% endif %}
 
     {% if page.goal %}
-    <div class="mb-4">
-        <h5 class="text-uppercase text-muted small mb-1">Goal</h5>
+    <div class="project-block">
+        <span class="project-label">Goal</span>
         <p>{{ page.goal }}</p>
     </div>
     {% endif %}
 
-    <div class="mb-5">
+    <div class="project-block">
         {% if page.problem or page.goal %}
-        <h5 class="text-uppercase text-muted small mb-1">Solution</h5>
+        <span class="project-label">Solution</span>
         {% endif %}
         {{ content }}
     </div>
@@ -32,26 +33,30 @@ layout: default
     {% if page.links %}
     <div class="mb-4">
         {% for link in page.links %}
-        <a href="{{ link.url }}" class="btn btn-brand btn-sm me-2" target="_blank" rel="noopener">{{ link.label }}</a>
+        <a href="{{ link.url }}" class="btn btn-accent btn-sm me-2" target="_blank" rel="noopener">{{ link.label }}</a>
         {% endfor %}
     </div>
     {% endif %}
-    
+
     {% if page.video %}
-    <h5 class="text-uppercase text-muted small mb-3">Demo</h5>
-    <div class="ratio ratio-16x9 mb-5">
-        <iframe src="{{ page.video }}" title="{{ page.title }} demo video" allowfullscreen></iframe>
+    <div class="project-block">
+        <span class="project-label">Demo</span>
+        <div class="ratio ratio-16x9">
+            <iframe src="{{ page.video }}" title="{{ page.title }} demo video" allowfullscreen></iframe>
+        </div>
     </div>
     {% endif %}
 
     {% if page.images %}
-    <h5 class="text-uppercase text-muted small mb-3">Gallery</h5>
-    <div class="row row-cols-2 row-cols-md-3 g-3">
-        {% for img in page.images %}
-        <div class="col">
-            <img src="{{ img }}" class="img-fluid rounded gallery-img" alt="{{ page.title }} photo">
+    <div class="project-block">
+        <span class="project-label">Gallery</span>
+        <div class="row row-cols-2 row-cols-md-3 g-3">
+            {% for img in page.images %}
+            <div class="col">
+                <img src="{{ img }}" class="img-fluid rounded gallery-img" alt="{{ page.title }} photo">
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
     {% endif %}
 

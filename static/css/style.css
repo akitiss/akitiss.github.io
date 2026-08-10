@@ -1,9 +1,17 @@
 :root {
-    --brand-color: #52b2cf;
-}
+    --brand-color: #7ec4cf;
+    --dark: #2a2a72;
+    --button: #c81d25;
+    --button-highlight: #ff5a5f;
+    --gray: #706c61;
+} 
 
 .my-navbar {
     background-color: var(--brand-color);
+}
+
+.my-footer {
+    background-color: var(--dark);
 }
 
 .navbar-brand {
@@ -11,24 +19,24 @@
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.5px;
+    padding-left: 1rem;
 }
 
 .navbar-nav .nav-link {
     font-size: 0.95rem;
     letter-spacing: 0.3px;
     margin-left: 0.5rem;
-    color: #d6e8ed;
+    color: #fff;
     transition: color 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    color: var(--button-highlight);
+    font-weight: 700;
 }
 
 .project-card img.card-img-top {
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -41,15 +49,15 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.btn-brand {
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
+.btn-accent {
+    background-color: var(--button);
+    border-color: var(--button);
     color: #fff;
 }
 
-.btn-brand:hover {
-    background-color: #3192af; /* slightly darker shade for hover feedback */
-    border-color: #3192af;
+.btn-accent:hover {
+    background-color: var(--button-highlight);
+    border-color: var(--button-highlight);
     color: #fff;
 }
 
@@ -67,4 +75,61 @@
 
 .gallery-img:hover {
     transform: scale(1.03);
+}
+
+.back-btn {
+    background-color: transparent;
+    border: 1.5px solid var(--gray);
+    color: var(--gray);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: var(--button);
+    border-color: var(--button);
+    color: #fff;
+    transform: translateX(-3px);
+}
+
+.project-page {
+    max-width: 800px;
+}
+
+.project-title {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--button);
+    border-radius: 2px;
+}
+
+.project-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--button);
+    border-bottom: 2px solid var(--brand-color);
+    padding-bottom: 2px;
+    margin-bottom: 0.75rem;
+}
+
+.project-block {
+    margin-bottom: 2.5rem;
+}
+
+.project-block p {
+    color: #333;
+    line-height: 1.7;
+}
+
+.projects-section {
+    padding-bottom: 5rem;
 }

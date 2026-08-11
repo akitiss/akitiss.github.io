@@ -19,6 +19,13 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     padding-left: 1rem;
+    color: #fff;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--button);
+    transform: scale(1.03);
 }
 
 .my-navbar .navbar-nav .nav-link {
@@ -136,10 +143,6 @@
     max-width: 400px;
     height: 3px;
     background-color: var(--button);
-    margin: 0 auto 3rem auto; /* no top margin, keeps bottom spacing before the heading */
+    margin: 0 auto;
     border-radius: 2px;
-}
-
-.section-bg {
-    background-color: #c4c4c3;
 }

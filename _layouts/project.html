@@ -7,6 +7,15 @@ layout: default
     <a href="/projects.html" class="btn back-btn btn-sm mb-4">&larr; Back to Projects</a>
 
     <h1 class="project-title mb-1">{{ page.title }}</h1>
+    
+    {% if page.tags %}
+    <div class="mb-2">
+        {% for tag in page.tags %}
+        <span class="badge badge-brand me-1">{{tag}}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+
     <div class="title-underline mb-4"></div>
 
     {% if page.problem %}

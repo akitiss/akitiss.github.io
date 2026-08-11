@@ -23,12 +23,12 @@ layout: default
     </div>
     {% endif %}
 
-    <div class="project-block">
+    {% if content != "" and content != nil %}
         {% if page.problem or page.goal %}
         <span class="project-label">Solution</span>
         {% endif %}
-        {{ content }}
-    </div>
+    {% endif %}
+    {{ content }}
 
     {% if page.links %}
     <div class="mb-4">

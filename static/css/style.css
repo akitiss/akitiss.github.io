@@ -146,3 +146,11 @@
     margin: 0 auto;
     border-radius: 2px;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand, .project-title {
+    font-family: 'Playfair Display', serif;
+}

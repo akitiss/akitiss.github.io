@@ -21,7 +21,7 @@
     padding-left: 1rem;
 }
 
-.navbar-nav .nav-link {
+.my-navbar .navbar-nav .nav-link {
     font-size: 0.95rem;
     letter-spacing: 0.3px;
     margin-left: 0.5rem;
@@ -29,7 +29,7 @@
     transition: color 0.2s ease;
 }
 
-.navbar-nav .nav-link:hover {
+.my-navbar .navbar-nav .nav-link:hover {
     color: var(--button-highlight);
 }
 
@@ -136,6 +136,10 @@
     max-width: 400px;
     height: 3px;
     background-color: var(--button);
-    margin: 3rem auto;
+    margin: 0 auto 3rem auto; /* no top margin, keeps bottom spacing before the heading */
     border-radius: 2px;
+}
+
+.section-bg {
+    background-color: #c4c4c3;
 }
